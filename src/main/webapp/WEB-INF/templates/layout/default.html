@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	lang="en">
+
+<head>
+<title>Trang chủ</title>
+<!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 10]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<!-- Meta -->
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+<th:block th:replace="fragment/css" />
+</head>
+
+<body>
+	<div id="pcoded" class="pcoded">
+		<div class="pcoded-overlay-box"></div>
+		<div class="pcoded-container navbar-wrapper">
+			<!-- HEADER -->
+			<div th:replace="fragment/narvbar">
+			
+			</div>
+			<div class="pcoded-main-container">
+				<div class="pcoded-wrapper">
+				   <!-- SIDE BAR -->
+					<div th:replace="fragment/sidebar">
+					
+					</div>
+					<div class="pcoded-content">
+						<div class="pcoded-inner-content">
+							<!-- Main-body start -->
+							<section layout:fragment="content"></section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<th:block th:replace="fragment/script" />
+
+</body>
+
+</html>
