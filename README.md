@@ -7,6 +7,7 @@ To get started, please make sure that you have suitable environment and database
 
 # Installing
 To run this app, using Eclipse or other sutable complier and change defaut database password config as same as your sql password in folder Contance-> DatabaseContance
+
 If everything is set up correctly, you should see your new app running shortly.
 
 
